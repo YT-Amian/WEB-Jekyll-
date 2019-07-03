@@ -1,65 +1,63 @@
-# Site wide configuration
+# Basic
+title: 余涌腾
+subtitle: 个人站
+description: 欢迎来到我的个人站~
+# 头像里面的标题
+avatarTitle: Mario
+# 头像里面的描述
+avatarDesc: 
+url: "https://yt-amian.github.io/WEB-Jekyll-/"
 
-title: "（要改的）网站名字"
-description: "（要改的）不懂单词就百度"
-logo: # 个人的logo120x120 px default image used for Twitter summary card
-teaser: # 400x250 px default teaser image used in image archive grid
-locale: zh_CN # 本地化翻譯
-url:
-feed:
-  path: atom.xml
+# Comment
+comment:
+    disqus: Mario
+    # gitment: xxx // 需要修改 comments.html中的client_id和client_secret
+    # uyan: 2143225  # 有言id,登录有言官网申请
 
-# Jekyll configuration
+# Social
+social:
+    weibo: 暂无
+    github: YT-Amian
+    # zhihu: panpanleopard
+    # juejin: xxx
+    jianshu: 
+    # twitter: 
+    mail: 575722100@qq.com
 
-sass:
-  sass_dir: _sass
-  style: compressed
-permalink: /:categories/:title/
-kramdown:
-  toc_levels: 1..2
+
+
+
+# 《----------------- 上面的信息修改成你自己的 ---------------------------》
+#
+#
+#  _post/ 下的文章更换成你自己的文章
+#  帮忙star一下，感谢~😆 地址：https://yt-amian.github.io/WEB-Jekyll-/
+# 《--------------- 下面的信息可以自行选择是否修改 ------------------------》
+
+
+permalink: /:year/:month/:title/
+# Format
 highlighter: rouge
-gems:
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
+
+textColor: #FF0000
+
+# supported colors: blue, green, purple, red, orange or slate. If you need clear, leave it empty.
+cover_color: clear
+
+# The blog button should not be removed.
+blog_button:
+    title: 博客主页
+
+# Navigation buttons in the front page.s
+nav:
+    - {title: 所有文章, description: archive, url: '/archive'}   
+    - {title: 标签, description: tags, url: '/tags'}      
+    - {title: 关于我, description: about, url: '/about'}      
+    
+
+# Pagination
+gems: [jekyll-paginate,jekyll-sitemap]
+paginate: 20
+paginate_path: "page/:num/"
 
 
-# Site owner
-owner:
-  name: （要改的）名字
-  email: （要改的）邮箱
-  twitter: 
-  google:
-    ad-client:
-    ad-slot:
-  bio: "（要改的）个人介绍"
-  avatar: #这是个人照片，例如bio-photo.jpg  160x160 px image for author byline
-  disqus-shortname:
-
-
-include:
-  - .htaccess
-exclude:
-  - "*.less"
-  - "*.sublime-project"
-  - "*.sublime-workspace"
-  - .asset-cache
-  - .bundle
-  - .jekyll-assets-cache
-  - .sass-cache
-  - CHANGELOG
-  - Capfile
-  - Gemfile
-  - Gruntfile.js
-  - LICENSE
-  - README
-  - Rakefile
-  - config
-  - gulpfile.js
-  - lib
-  - log
-  - node_modules
-  - package.json
-  - spec
-  - tmp
-port: 5001
